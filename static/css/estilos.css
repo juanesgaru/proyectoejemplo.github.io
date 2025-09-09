@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(115, 145, 7);
+}
+h2 {
+  color: rgb(141, 48, 48);
+}
+h5 .parrafo {
+  font-family: sans-serif;
+}
+.contenedor {
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  padding: 30px;
+  border: 3px darkorange;
+}

@@ -1,0 +1,9 @@
+.contenedor{
+    display:flex;
+    justify-content: space-around;
+}
+.item{
+    width: 15%;
+    height: 200px;
+    background-color: aquamarine;
+}
