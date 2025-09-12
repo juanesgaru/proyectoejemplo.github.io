@@ -7,18 +7,23 @@
     <link rel="stylesheet" href="/static/css/estilos.css" />
   </head>
   <body>
-    <a href="{{ url_for('flex') }}">Contacto</a><br />
-    <a href="{{ url_for('productos') }}">productos</a>
-    <a href="{{ url_for('grid') }}">Irrelevante2</a>
-
-    <img src="static\img\colibri.png" alt="Foto de perfil" width="300" height="300" />
-    <h1>Se lo Tengo</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Inicio</a></li>
+        <li><a href="{{ url_for('productos') }}">Productos</a></li>        
+        <li><a href="{{ url_for('flex') }}">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1>Mi página web</h1>
     <h2>Servicios, Inmuebles, Muebles</h2>
-    <h3>Mi tercero titulo tercero</h3>
-    <h4>titulo cuarto</h4>
-    <div class="contenedor">
-      <h4 class="secundaria">titulo secundario</h4>
-    </div>
-    <h5>titulo quinto</h5>
+    <div>
+      <img class="logo" src="/static/img/colibri.png" alt="Logo Colibrí" />
+      <p>Ofrecemos una amplia gama de servicios relacionados con la compra, venta y alquiler de inmuebles y muebles.
+      Nuestro equipo de expertos está aquí para ayudarte a encontrar la mejor solución que se adapte a tus necesidades.
+      Contamos con una extensa base de datos de propiedades y muebles de alta calidad, asegurando que siempre encuentres lo que buscas.
+      Además, ofrecemos asesoramiento personalizado y soporte durante todo el proceso de compra o alquiler.
+      Ven y visítanos para descubrir cómo podemos ayudarte a hacer realidad tus sueños inmobiliarios y de mobiliario EL COLIBRÍ.
+      </p>
+    </div>  
   </body>
 </html>

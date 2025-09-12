@@ -1,3 +1,8 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
 .contenedor{
     display:flex;
     justify-content: space-around;
@@ -6,4 +11,65 @@
     width: 15%;
     height: 200px;
     background-color: aquamarine;
+}
+nav ul {
+  margin-top: 0;
+  margin-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background-color: rgb(126, 136, 150);
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: black;
+}
+footer {
+  text-align: center;
+  background-color: darkorange;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.tituloF{
+    text-align: center;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formulario label{
+    font-weight: bold;
+}
+.formulario input, .formulario textarea{
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.formulario button{
+    width: 100px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.formulario button:hover{
+    background-color: darkblue;
 }

@@ -7,37 +7,19 @@
     <link rel="stylesheet" href="static\css\flex.css">
 </head>
 <body>
-    <div class="contenedor">
-
-        <div class="item">
-            <h1>titulo 1</h1>
-            <p>parrafo 1</p>
-
-        </div>
-
-         <div class="item">
-            <h1>titulo 1</h1>
-            <p>parrafo 1</p>
-
-        </div>
-
-         <div class="item">
-            <h1>titulo 1</h1>
-            <p>parrafo 1</p>
-
-        </div>
-
-         <div class="item">
-            <h1>titulo 1</h1>
-            <p>parrafo 1</p>
-
-        </div>
-    </div>
-    <form action="/procesar" method="POST">
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Inicio</a></li>
+        <li><a href="{{ url_for('productos') }}">Productos</a></li>        
+        <li><a href="{{ url_for('flex') }}">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1 class="tituloF">Formulario de contacto</h1>      
+    <form action="/procesar" method="POST" class="formulario">
         <label for="nombre" >Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
         <label for="telefono">Telefono:</label>
-        <input id="telefono" type="tel" name="telefono" placeholder="escribe aca telefono">
+        <input id="telefono" type="tel" name="telefono" placeholder="Escribe tu telefono">
         <input type="submit" value="Enviar">
     </form>    
     
